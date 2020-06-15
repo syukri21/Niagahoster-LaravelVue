@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    console: () => {
-        console.log("new one");
+    mounted() {
+        console.log("Component mounted.");
     },
 };
 </script>
