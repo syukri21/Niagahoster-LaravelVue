@@ -12,19 +12,17 @@ const mix = require("laravel-mix");
  */
 
 mix.js("resources/js/app.js", "public/js")
+    .sass("resources/sass/app.scss", "public/css")
     .webpackConfig({
         module: {
-            rules: [
-                {
-                    test: /\.scss$/,
-                    use: ["vue-style-loader", "css-loader", "sass-loader"]
-                }
-            ]
+            rules: [{
+                test: /\.scss$/,
+                use: ["vue-style-loader", "css-loader", "sass-loader"]
+            }]
         },
         resolve: {
             alias: {
                 "@": path.resolve("resources/assets/sass")
             }
         }
-    })
-    .sass("resources/sass/app.scss", "public/css");
+    }).mix.copyDirectory('resources/fonts', 'public/fonts')
