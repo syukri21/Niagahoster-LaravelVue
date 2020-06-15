@@ -15,6 +15,10 @@ module.exports = {
     },
     theme: {
         extend: {},
+        fontFamily: {
+            'roboto': ['Roboto Lt'],
+            'mons': ['Montserrat'],
+        }
     },
     variants: {},
     plugins: [
