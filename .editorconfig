@@ -11,5 +11,5 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{vue,js,json,html,scss,blade.php,yml}]
+[*.{yml,yaml}]
 indent_size = 2
