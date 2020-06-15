@@ -1,5 +1,5 @@
 <template>
-    <div>Home</div>
+    <TopAppbar></TopAppbar>
 </template>
 
 <script src="./home.js"></script>
