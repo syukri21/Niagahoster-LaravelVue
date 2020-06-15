@@ -1,4 +1,5 @@
 const mix = require("laravel-mix");
+const tailwindcss = require("tailwindcss");
 
 /*
  |--------------------------------------------------------------------------
@@ -13,17 +14,40 @@ const mix = require("laravel-mix");
 
 mix.js("resources/js/app.js", "public/js")
     .sass("resources/sass/app.scss", "public/css")
-    .copyDirectory('resources/fonts', 'public/fonts')
+    .options({
+        processCssUrls: false,
+        postCss: [tailwindcss("./tailwind.config.js")],
+        enableCssModules: true,
+        vue: {
+            esModule: true
+        }
+    })
+    .copyDirectory("resources/fonts", "public/fonts")
+    .copyDirectory("resources/css/font.css", "public/css")
     .webpackConfig({
         module: {
-            rules: [{
-                test: /\.scss$/,
-                use: ["vue-style-loader", "css-loader", "sass-loader"]
-            }]
+            rules: [
+                //  {
+                //      test: /\.scss$/,
+                //      use: ["vue-style-loader", "css-loader", "sass-loader"]
+                //  },
+                {
+                    test: /\.css$/,
+                    loaders: [
+                        {
+                            loader: "css-loader",
+                            options: {
+                                modules: true,
+                                localIdentName: "[local]_[hash:base64:8]"
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         resolve: {
             alias: {
                 "@": path.resolve("resources/assets/sass")
             }
         }
-    })
+    });
