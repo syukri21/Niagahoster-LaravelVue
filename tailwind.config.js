@@ -19,6 +19,14 @@ module.exports = {
             'roboto': ['Roboto Lt'],
             'mons': ['Montserrat'],
         },
+        container: {
+            padding: {
+                default: "47px"
+            },
+            breakpoint: {
+                xl: "1150px"
+            },
+        },
         colors: {
             secondary: {
                 default: "#0090EF",

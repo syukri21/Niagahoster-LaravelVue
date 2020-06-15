@@ -9,7 +9,6 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="css/font.css">
-        <script src="https://kit.fontawesome.com/your-code-number.js"></script>
     </head>
     <body>
         <div id="app"></div>
