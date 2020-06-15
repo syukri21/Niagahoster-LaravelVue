@@ -11435,6 +11435,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("Container", [
     _c("div", { staticClass: "flex justify-between" }, [
+      _c("div", [
+        _c("span", { staticClass: "text-xs" }, [
+          _vm._v(
+            "\n                Gratis Ebook 9 Cara Cerdas Menggunakan Domain [x]\n            "
+          )
+        ])
+      ]),
+      _vm._v(" "),
       _c(
         "div",
         [
@@ -11445,13 +11453,13 @@ var render = function() {
           _c(
             "Button",
             { staticClass: "ml-4", attrs: { icon: "comments", size: "sm" } },
-            [_vm._v("Live Chat")]
+            [_vm._v("\n                Live Chat\n            ")]
           ),
           _vm._v(" "),
           _c(
             "Button",
             { staticClass: "ml-4", attrs: { icon: "phone", size: "sm" } },
-            [_vm._v("0274-5305505")]
+            [_vm._v("\n                0274-5305505\n            ")]
           )
         ],
         1
@@ -23639,7 +23647,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_3__["library"].add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faPhone"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faPhoneAlt"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faUserCircle"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faComments"]);
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_3__["library"].add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faPhone"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faPhoneAlt"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faUserCircle"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faComments"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faTag"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('faw-icon', _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.productionTip = false;
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({

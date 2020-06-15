@@ -11,10 +11,11 @@ import {
     faPhoneAlt,
     faUserCircle,
     faComments,
+    faTag,
 } from '@fortawesome/free-solid-svg-icons'
 
 
-library.add(faPhone, faPhoneAlt, faUserCircle, faComments)
+library.add(faPhone, faPhoneAlt, faUserCircle, faComments, faTag)
 Vue.component('faw-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
