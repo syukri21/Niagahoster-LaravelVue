@@ -1,14 +1,10 @@
 <template>
-    <div class="text-primary-default">asd</div>
+    <div class="text-primary-default">
+        <Home></Home>
+    </div>
 </template>
 
-<script>
-export default {
-    mounted() {
-        console.log("Component mounted.");
-    }
-};
-</script>
+<script src="./main.js"></script>
 
 <style lang="scss">
 @import "../sass/app.scss";
