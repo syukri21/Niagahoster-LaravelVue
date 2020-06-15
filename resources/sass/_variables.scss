@@ -2,7 +2,8 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: 'Nunito',
+sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -14,6 +15,27 @@ $pink: #f66d9b;
 $red: #e3342f;
 $orange: #f6993f;
 $yellow: #ffed4a;
-$green: #38c172;
+$green: #00B348;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+
+$white: #FFFFFF;
+$black: #111111;
+
+$primary-background-color: $white;
+$secondary-background-color: #303030;
+
+$primary-color: #0090EF;
+$primary-light-color: #00A2F3;
+$primary-dark-color: #007FDE;
+
+$text-primary-color: #3A4166;
+
+$secondary-color: #FFBE54;
+$highlight-color: #FFDBA0;
+$dark-color: #7F5F2A;
+
+$dull-color: #CCAF80;
+
+$success-color:$green;
