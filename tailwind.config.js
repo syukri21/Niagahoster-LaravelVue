@@ -31,29 +31,30 @@ module.exports = {
                 xl: "1150px"
             },
         },
-        colors: theme => {
-            console.log("theme", theme("color"))
+        colors: {
+            // ...theme('colors'),
+            gray: {
+                ...colors.gray
+            },
 
-            return ({
-                // ...theme('colors'),
-                gray: {
-                    ...colors.gray
-                },
-                secondary: {
-                    default: "#0090EF",
-                    light: '#00A2F3',
-                    dark: "#007FDE"
-                },
-                primary: {
-                    default: "#3A4166"
-                },
-                background: {
-                    primary: "#FFFFFF",
-                    secondary: "303030",
-                },
-                success: "#00B348",
-            })
+            // background: {
+            //     primary: "#FFFFFF",
+            //     secondary: "303030",
+            // },
         },
+        textColor: {
+            secondary: {
+                default: "#0090EF",
+                light: '#00A2F3',
+                dark: "#007FDE"
+            },
+            primary: {
+                default: "#646464",
+                light: "#4C4C4C",
+                dark: "#393939"
+            },
+            success: "#00B348",
+        }
     },
     variants: {},
     plugins: [

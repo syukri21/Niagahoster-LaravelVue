@@ -11,12 +11,15 @@
 <script>
 export default {
     name: "Button",
-    props: ["icon", "type", "size"],
+    props: ["icon", "type", "size", "textColor"],
     computed: {
         classObject() {
             const size = `text-${this.size || "sm"}`;
-
-            return `${size}`;
+            const textColor = this.textColor || "primary";
+            const hover = `hover:text-${
+                this.textColor !== "primary" ? "secondary" : "primary"
+            }`;
+            return `${size} ${hover}`;
         }
     }
 };
