@@ -2,7 +2,7 @@
     <div class="py-4 border-b border-gray-200">
         <Container>
             <div class="flex justify-between">
-                <div></div>
+                <NiagahosterSVG></NiagahosterSVG>
                 <Navigations :navs="navs"></Navigations>
             </div>
         </Container>
@@ -12,6 +12,7 @@
 <script>
 import Container from "@/components/atoms/container";
 import Navigations from "./navigations";
+import NiagahosterSVG from "@/components/svg/niagahoster.svg.vue";
 
 export default {
     name: "MainAppbar",
@@ -32,7 +33,8 @@ export default {
     },
     components: {
         Container,
-        Navigations
+        Navigations,
+        NiagahosterSVG
     }
 };
 </script>
